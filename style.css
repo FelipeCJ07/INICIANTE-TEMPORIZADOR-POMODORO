@@ -1,0 +1,28 @@
+/*
+  Este arquivo contém estilos personalizados que complementam o Tailwind CSS.
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Transição suave para a barra de progresso e a cor de fundo, 
+  proporcionando uma experiência visual mais agradável.
+*/
+.transition-all-smooth {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Estes seletores removem as setas de incremento/decremento
+  dos campos de entrada de número (inputs type="number") para um visual mais limpo,
+  funcionando nos navegadores baseados em WebKit (Chrome, Safari) e Firefox.
+*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
